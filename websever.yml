@@ -5,6 +5,6 @@
   tasks:
      - name: installing
        yum:
-         name: httpd
+         name: haproxy
          state: latest
 

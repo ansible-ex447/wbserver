@@ -3,8 +3,8 @@
   hosts: all
   become: yes
   tasks:
-     - name: installing
+     - name: Install HDCP
        yum:
-         name: haproxy
+         name: dhcp*
          state: latest
 

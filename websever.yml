@@ -1,10 +1,10 @@
 ---
-- name: intsalling hproxy
+- name: Installing NFS
   hosts: all
   become: yes
   tasks:
-     - name: Install HDCP
+     - name: Install nfs packages
        yum:
-         name: dhcp*
+         name: nfs*
          state: latest
 

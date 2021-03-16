@@ -1,9 +1,9 @@
 ---
-- name: Intsall hproxy
+- name: Intsall haproxy
   hosts: all
   become: yes
   tasks:
-     - name: Installing hproxy package
+     - name: Installing haproxy package
        yum:
-         name: httpd
-         state: latest 
+         name: haproxy
+         state: installed

@@ -1,10 +1,9 @@
 ---
-- name: Installing NFS
+- name: Intsall hproxy
   hosts: all
   become: yes
   tasks:
-     - name: Install nfs packages
+     - name: Installing hproxy package
        yum:
-         name: nfs*
-         state: latest
-
+         name: httpd
+         state: latest 
